@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+      img{
+        height: 300px;
+        width: 400px;
+      }
+      p{
+        font-size: 14px;
+        font-family: Ubuntu;
+      }
+    </style>
+    <title>STAR WARS</title>
+  </head>
+  <body>
+    <!-- Titulo principal -->  
+    <div class="container-fluid">
+      <div class="text-center py-3 text-white bg-dark mt-3">
+        <h1 class="display-3" style="font-family: Ubuntu"><b>Star Wars !</b></h1>
+      </div>
+    </div>
+    
+    <!--Menu personajes/Listado-->  
+    <div class="container">
+      <div class="row">
+        <!--Card Add/Del-->
+        <div class="text-center col-lg-6 col-sm-12">
+          <div class="container py-3">
+            <div class="card py-2 bg-light">
+              <div class="text-center">
+                <h4 class="card-title" style="font-family: Ubuntu">Menu de personaje</h4>
+                <a href="/addPersonaje">
+                  <input class="btn btn-dark" type="button" value="Agregar">
+                </a>
+                <a href="/delPersonaje">
+                  <input class="btn btn-dark" type="button" value="Eliminar">
+                </a>
+              </div>
+            </div>
+          </div>    
+        </div>
+        <!--Card Listado-->
+        <div class="text-center col-lg-6 col-sm-12">
+          <div class="container py-3">
+              <div class="card py-2 bg-light">
+                <div class="text-center">
+                  <h4 class="card-title" style="font-family: Ubuntu">Menu listado</h4>
+                  <form method="POST", action="/lis">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-6" >
+                        <div class="text-center ml-5" style="width: 14rem">
+                            <input type="text" class="form-control" name="numero"  placeholder="Ingresar capitulo entre 1-8">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-6" >
+                        <input class="btn btn-dark " type="submit" value="Buscar">  
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Episodios-->
+    <div class="container-fluid">
+      <div class="card py-2 bg-light">
+        <h1 class="text-center" style="font-family: Ubuntu">Episodios</h1>
+        <div class="row"> 
+          <div class="text-center col-sm-12 col-md-6 col-xl-3">
+            <div class="card ml-4" style="width: 17rem;">
+              <img src="episodios/epi1.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text" style="font-family: Ubuntu" style="font-size: 12px" ">Describe la historia del maestro jedi Qui-Gon Jinn y de su aprendiz Obi-Wan Kenobi, que escoltan y protegen a la Reina.</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center col-sm-12 col-md-6 col-xl-3">
+            <div class="card ml-2" style="width: 17rem;">
+              <img src="episodios/epi2.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Diez años después de la Batalla de Naboo, la galaxia se encuentra al borde de una guerra civil. Bajo la dirección de un Jedi, Conde Dooku.</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center col-sm-12 col-md-6 col-xl-3">
+              <div class="card" style="width: 17rem;">
+                <img src="episodios/epi3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Una época en la que los Caballeros Jedi se han esparcido por toda la galaxia, dirigiendo un ejército para enfrentar a los Separ.  Galácticos.</p>
+                </div>
+              </div>
+          </div>
+          <div class="text-center col-sm-12 col-md-6 col-xl-3">
+            <div class="card" style="width: 17rem;">
+              <img src="episodios/epi4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Un grupo de guerrilleros conocidos como la Alianza Rebelde cuyo objetivo es destruir la estación espacial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-3"> 
+            <div class="text-center col-sm-12 col-md-6 col-xl-3">
+              <div class="card ml-4" style="width: 17rem;">
+                <img src="episodios/epi5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Tres años después de la destrucción de la estación espacial. En El Imperio contraataca Luke Skywalker, Han Solo, Leia Organa</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-xl-3">
+              <div class="card ml-2" style="width: 17rem;">
+                <img src="episodios/epi6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">El Imperio ha comenzado la construcción en secreto de la Segunda Estrella de la Muerte, mucho más poderosa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-xl-3">
+                <div class="card" style="width: 17rem;">
+                  <img src="episodios/epi7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">La Galaxia no ha podido acabar con la tiranía y la opresión. Alianza Rebelde se ha transformado en la Resistencia</p>
+                  </div>
+                </div>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-xl-3">
+              <div class="card" style="width: 17rem;">
+                <img src="episodios/epi8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Tras la muerte de Han Solo y de la destrucción de la Base Starkiller, el Rey  viaja hacia el lejano planeta oculto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
